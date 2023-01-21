@@ -7,18 +7,21 @@
     flex-direction: column;
     align-items: center;
 
+    width: 100%;
+
     @include m.desktop {
         flex-direction: row;
+        width: auto;
     }
 
     &__link{
         font-size: 2rem;
         font-weight: 700;
         color: v.$negro;
-        margin: 4rem 0 0;
+        margin: 3rem 0 0;
 
         @include m.desktop {
-            margin: 0 4rem 0 0;
+            margin: 0 3rem 0 0;
 
             transition: transform 300ms;
 
