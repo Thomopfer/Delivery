@@ -6,8 +6,8 @@
     flex-direction: column;
     align-items: center;
 
-    padding: v.$separacion;
-    
+    padding: v.$separacion 0;
+
     @include m.desktop {
         flex-direction: row;
         justify-content: space-between;
