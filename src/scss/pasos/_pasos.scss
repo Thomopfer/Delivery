@@ -4,28 +4,30 @@
 .pasos{
     margin-top: 5rem;
 
-    &__wave{
-
-    }
-
     &__contenido{
         background-color: v.$primario;
         margin-top: -1px
     }
-
     &__heading{
         text-align: center;
         color: v.$blanco;
+        font-size: 5rem;
 
         &--span{
             display: block;
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
     }
-
     &__grid{
         @include m.tablet {
             @include m.grid(3, v.$separacion);
+        }
+    }
+    &__img{
+        transition: transform 300ms;
+
+        &:hover{
+            transform: rotate(-4deg) scale(1.1);
         }
     }
 }
