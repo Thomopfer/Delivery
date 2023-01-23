@@ -36,13 +36,16 @@
         width: 100%;
         padding: 1.5rem;
         border: none;
+        border-radius: 1rem;
     }
     &__submit{
-        margin-top: 2rem;
+        margin-top: 4rem;
+        text-transform: uppercase;
         @include m.boton(v.$secundario, v.$blanco);
         @include m.tablet {
             width: 100%;
         }
+        padding: 1.5rem 3rem;
     }
 
     &__img-contenedor{
