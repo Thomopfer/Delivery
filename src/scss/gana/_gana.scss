@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.gana{
+    padding: v.$separacion 0;
+
+    &__heading{
+        font-size: 5rem;
+        text-align: center;
+        color: v.$secundario;
+    }
+
+    &__grid{
+        @include m.tablet {
+            @include m.grid(2, 4rem);
+            align-items: center;
+        }
+    }
+
+    &__img{
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: v.$separacion;
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__info{
+
+        p{
+            margin: 1.5rem 1.5rem;
+            line-height: 1.5;
+            color: v.$secundario;
+            text-align: center;
+            @include m.tablet {
+                text-align: left;
+                margin: 1.5rem 0;
+            }
+        }
+
+        a{
+            @include m.boton(v.$primario, v.$blanco);
+            @include m.tablet {
+                width: 50%;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+}
