@@ -6,7 +6,8 @@
 
     &__contenido{
         background-color: v.$primario;
-        margin-top: -3px
+        margin-top: -3px;
+        padding-bottom: v.$separacion;
     }
     &__heading{
         text-align: center;

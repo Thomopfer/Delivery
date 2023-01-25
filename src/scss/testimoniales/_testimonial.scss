@@ -13,6 +13,11 @@
 
     @include m.tablet {
         margin-bottom: 0;
+        transition: scale 300ms;
+
+        &:hover{
+            scale: 1.03;
+        }
 
         &:nth-child(1){
             grid-column: 1 / 4;
@@ -43,6 +48,7 @@
         color: v.$blanco;
     }
     &__autor{
+        font-size: 2.5rem;
         font-weight: 700;
         margin: .5rem 0;
     }
