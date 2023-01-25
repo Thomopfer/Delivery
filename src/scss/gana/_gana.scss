@@ -28,14 +28,17 @@
 
     &__info{
 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
         p{
-            margin: 1.5rem 1.5rem;
             line-height: 1.5;
             color: v.$secundario;
             text-align: center;
             @include m.tablet {
                 text-align: left;
-                margin: 1.5rem 0;
             }
         }
 
@@ -43,7 +46,6 @@
             @include m.boton(v.$primario, v.$blanco);
             @include m.tablet {
                 width: 50%;
-                margin-bottom: 1.5rem;
             }
         }
     }
