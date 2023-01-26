@@ -44,6 +44,7 @@
 
         a{
             @include m.boton(v.$primario, v.$blanco);
+            margin-top: 0.8rem;
             @include m.tablet {
                 width: 50%;
             }
