@@ -47,9 +47,11 @@
 
     &__link{
         width: fit-content;
+        margin: 0 auto;
 
         @include m.tablet {
             transition: scale 300ms;
+            margin: 0;
             &:hover{
                 scale: 1.1;
             }
